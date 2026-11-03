@@ -10,10 +10,10 @@ Wansom AI runs the research on its own systems, as the signed-in user, and retur
 
 ## Tools
 
-- `legal_research` — the main tool, for every legal question including "find the recent decisions on …": Wansom's full research engine, the same as in the Wansom app. Pass the user's `question` **exactly as they asked it** — their own words, not rephrased, expanded or split into sub-topics (Wansom interprets it itself, as in the app; a rewritten question gets different research) — and the `jurisdiction` (country name). Usually under a minute. Returns Wansom's checked answer, its sources, and where it was saved in Wansom.
+- `legal_research` — the main tool, for every legal question including "find the recent decisions on …": Wansom's full research engine, the same as in the Wansom app. Pass the user's `question` **exactly as they asked it** — their own words, not rephrased, expanded or split into sub-topics (Wansom interprets it itself, as in the app; a rewritten question gets different research) — and the `jurisdiction` **only if the user named a country** (or it's clear from this conversation). Otherwise leave it out and never guess: Wansom uses the jurisdiction from the user's own Wansom workspace settings, and the answer says which one it used. Usually under a minute. Returns Wansom's checked answer, its sources, and where it was saved in Wansom.
 - If it returns `status: "in_progress"` (Wansom needed longer than the time limit): tell the user in one line that Wansom is finishing, call `get_research_result` with the `research_id` (it waits for the answer), and present the final answer. Don't answer the question yourself in the meantime.
 - `find_cases` — only when the user explicitly wants a bare list of citations with no analysis.
-- If the jurisdiction isn't clear from the question, ask before searching.
+- If the result says `status: "needs_jurisdiction"` (no country named and none set in the user's Wansom account), ask the user which country, then call `legal_research` again with it.
 
 ## Presenting the answer
 
