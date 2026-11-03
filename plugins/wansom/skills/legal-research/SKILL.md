@@ -8,12 +8,18 @@ when_to_use: The user asks a legal question about an African jurisdiction — th
 
 Wansom AI runs the research on its own systems, as the signed-in user, and returns a researched answer. Use it instead of your own knowledge for any statement about what the law is or what a court decided.
 
+## Jurisdiction first
+
+- If the user named the jurisdiction(s), use them.
+- If not, call `choose_jurisdictions` with `purpose: "research"` and the user's question. It shows a picker in the chat with Wansom's jurisdictions (the user's usual one pre-selected); the user can tick several for a comparative analysis. Wait for their choice — never guess a jurisdiction. In apps without the picker, show the options it returns and ask the user to reply.
+
 ## Tools
 
-- `legal_research` — the main tool, for every legal question including "find the recent decisions on …": Wansom's full research engine, the same as in the Wansom app. Pass the user's `question` **exactly as they asked it** — their own words, not rephrased, expanded or split into sub-topics (Wansom interprets it itself, as in the app; a rewritten question gets different research) — and the `jurisdiction` **only if the user named a country** (or it's clear from this conversation). Otherwise leave it out and never guess: Wansom uses the jurisdiction from the user's own Wansom workspace settings, and the answer says which one it used. Usually under a minute. Returns Wansom's checked answer, its sources, and where it was saved in Wansom.
-- If it returns `status: "in_progress"` (Wansom needed longer than the time limit): tell the user in one line that Wansom is finishing, call `get_research_result` with the `research_id` (it waits for the answer), and present the final answer. Don't answer the question yourself in the meantime.
+- `legal_research` — the main tool, for every legal question including "find the recent decisions on …": Wansom's full research engine, the same as in the Wansom app. Pass the user's `question` **exactly as they asked it** — their own words, not rephrased, expanded or split into sub-topics (Wansom interprets it itself, as in the app; a rewritten question gets different research) — and `jurisdictions` — the one(s) the user named or chose, e.g. `["Kenya"]` or `["Kenya", "Uganda"]`. Several jurisdictions are researched in parallel, each in its own official legal database, and returned under their own headings. Usually under a minute. Returns Wansom's checked answer, its sources, and where it was saved in Wansom.
+- If it returns `status: "in_progress"` (Wansom needed longer than the time limit): tell the user in one line that Wansom is finishing, call `get_research_result` with the `research_ids` (it waits for the answers), and present the final answer. Don't answer the question yourself in the meantime.
 - `find_cases` — only when the user explicitly wants a bare list of citations with no analysis.
-- If the result says `status: "needs_jurisdiction"` (no country named and none set in the user's Wansom account), ask the user which country, then call `legal_research` again with it.
+- If the result says `status: "needs_jurisdiction"`, call `choose_jurisdictions` and continue with the user's choice.
+- For a comparison, compare only what Wansom's answer states for each jurisdiction (similarities, differences, practical consequences) and keep every link.
 
 ## Presenting the answer
 

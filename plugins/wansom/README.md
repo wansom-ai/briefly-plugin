@@ -21,6 +21,8 @@ In Claude.ai or Claude Desktop, add a custom connector with `https://www.wansom.
 - **`/wansom:draft <document type> [details]`** — a new document from Wansom's drafting engine, saved and editable in Wansom AI. Also covers reviewing a Vault document.
 - **`/wansom:cause-list <court> <station> [dates]`** — who hears which matter, where and when.
 
-Tools: `legal_research` (+ `get_research_result`), `find_cases`, `kenya_cause_list`, `draft_document` / `review_document` (+ `get_draft`), `search_vault`, `read_document`, `list_workspaces`. Long research and drafts that outlast the assistant's time limit keep running in Wansom and are fetched with the `get_…` tools. They only ever create new documents — nothing is deleted or changed.
+Before research or drafting, Claude asks which jurisdiction(s) to use with an in-chat picker (`choose_jurisdictions`): tick several for a comparative analysis; drafting takes exactly one. Your usual jurisdiction is pre-selected.
+
+Tools: `choose_jurisdictions`, `legal_research` (+ `get_research_result`), `find_cases`, `kenya_cause_list`, `draft_document` / `review_document` (+ `get_draft`), `search_vault`, `read_document`, `list_workspaces`. Long research and drafts that outlast the assistant's time limit keep running in Wansom and are fetched with the `get_…` tools. They only ever create new documents — nothing is deleted or changed.
 
 Support: law@wansom.ai
