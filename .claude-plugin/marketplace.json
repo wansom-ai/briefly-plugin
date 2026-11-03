@@ -1,6 +1,6 @@
 {
   "name": "wansom",
-  "description": "Wansom plugins: Briefly legal and regulatory intelligence for African markets.",
+  "description": "Wansom plugins: Wansom AI legal workspace and Briefly legal & regulatory intelligence for African markets.",
   "owner": {
     "name": "Wansom",
     "email": "law@wansom.ai",
@@ -8,11 +8,29 @@
   },
   "plugins": [
     {
+      "name": "wansom",
+      "source": "./plugins/wansom",
+      "description": "Wansom AI in Claude: researched answers on African law with every case linked, Kenya cause lists, drafting, document review and your Vault. Requires a Wansom AI Pro, Teams or Explorer plan.",
+      "category": "legal",
+      "tags": [
+        "legal",
+        "legal-research",
+        "drafting",
+        "africa",
+        "kenya"
+      ]
+    },
+    {
       "name": "briefly",
       "source": "./plugins/briefly",
       "description": "Legal and regulatory intelligence across African markets: new laws, regulator notices, enforcement actions and court outcomes, with links to the full Briefly analysis.",
       "category": "legal",
-      "tags": ["legal", "regulatory", "compliance", "africa"]
+      "tags": [
+        "legal",
+        "regulatory",
+        "compliance",
+        "africa"
+      ]
     }
   ]
 }

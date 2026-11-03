@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wansom": {
+      "type": "http",
+      "url": "https://www.wansom.ai/api/mcp/wansom"
+    }
+  }
+}

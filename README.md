@@ -8,6 +8,15 @@ Everything runs on one public, read-only MCP server — no account or API key:
 https://www.wansom.ai/api/mcp
 ```
 
+## Plugins in this marketplace
+
+| Plugin | What it is | Who can use it |
+|---|---|---|
+| `wansom` | **Wansom AI** — researched answers on African law with every case linked, Kenya cause lists, drafting, document review and your Vault, run on Wansom's own systems. Signs in with your Wansom account. Connector: `https://www.wansom.ai/api/mcp/wansom` | Wansom AI Pro, Teams and Explorer |
+| `briefly` | **Briefly** — legal & regulatory intelligence across African markets (described below). No sign-in | Everyone |
+
+Install either with `claude plugin install wansom@wansom` / `claude plugin install briefly@wansom` after adding the marketplace (see below). The `wansom` plugin's own README is in `plugins/wansom/`.
+
 ## Requirements
 
 - No Briefly account, API key or payment — the server is public and read-only.

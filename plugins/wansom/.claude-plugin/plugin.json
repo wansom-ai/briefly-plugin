@@ -1,0 +1,19 @@
+{
+  "name": "wansom",
+  "displayName": "Wansom AI",
+  "version": "0.1.0",
+  "description": "Wansom AI's legal workspace in Claude: researched answers on African law with every case linked, Kenya cause lists, drafting and document review, and your Vault — for Wansom Pro, Teams and Explorer users.",
+  "author": {
+    "name": "Wansom",
+    "email": "law@wansom.ai",
+    "url": "https://www.wansom.ai"
+  },
+  "homepage": "https://www.wansom.ai",
+  "license": "MIT",
+  "keywords": ["legal", "law", "africa", "kenya", "legal-research", "drafting", "contract-review", "cause-list"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://www.wansom.ai",
+  "supportUrl": "https://www.wansom.ai/contact",
+  "privacyPolicyUrl": "https://www.wansom.ai/privacy-policy",
+  "termsOfServiceUrl": "https://www.wansom.ai/terms-of-service"
+}
