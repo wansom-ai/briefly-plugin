@@ -5,7 +5,7 @@ Legal and regulatory intelligence across African markets, inside Claude: new law
 ## Install
 
 ```
-/plugin marketplace add wansom/briefly-plugin
+/plugin marketplace add wansom-ai/briefly-plugin
 /plugin install briefly@wansom
 ```
 

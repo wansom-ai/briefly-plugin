@@ -13,7 +13,7 @@ https://www.wansom.ai/api/mcp
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add wansom/briefly-plugin
+/plugin marketplace add wansom-ai/briefly-plugin
 /plugin install briefly@wansom
 ```
 
