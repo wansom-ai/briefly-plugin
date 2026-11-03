@@ -8,6 +8,13 @@ Everything runs on one public, read-only MCP server — no account or API key:
 https://www.wansom.ai/api/mcp
 ```
 
+## Requirements
+
+- No Briefly account, API key or payment — the server is public and read-only.
+- Internet access to `https://www.wansom.ai`.
+- **Claude Code plugin:** a recent Claude Code with plugin support (the two-line install below works in one step on v2.1.275 or later).
+- **Connector:** any app that supports remote MCP servers over Streamable HTTP (Claude.ai, Claude Desktop, ChatGPT developer mode, Cursor, VS Code, Windsurf…).
+
 ## Install
 
 ### Claude Code (plugin)
