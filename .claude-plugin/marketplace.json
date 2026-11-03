@@ -1,0 +1,18 @@
+{
+  "name": "wansom",
+  "description": "Wansom plugins: Briefly legal and regulatory intelligence for African markets.",
+  "owner": {
+    "name": "Wansom",
+    "email": "law@wansom.ai",
+    "url": "https://www.wansom.ai"
+  },
+  "plugins": [
+    {
+      "name": "briefly",
+      "source": "./plugins/briefly",
+      "description": "Legal and regulatory intelligence across African markets: new laws, regulator notices, enforcement actions and court outcomes, with links to the full Briefly analysis.",
+      "category": "legal",
+      "tags": ["legal", "regulatory", "compliance", "africa"]
+    }
+  ]
+}

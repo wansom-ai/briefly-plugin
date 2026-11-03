@@ -1,0 +1,19 @@
+{
+  "name": "briefly",
+  "displayName": "Wansom Briefly",
+  "version": "0.1.0",
+  "description": "Legal and regulatory intelligence across African markets: new laws and regulations, regulator notices, enforcement actions and court outcomes, with links to the full Briefly analysis.",
+  "author": {
+    "name": "Wansom",
+    "email": "law@wansom.ai",
+    "url": "https://www.wansom.ai"
+  },
+  "homepage": "https://www.wansom.ai/briefly",
+  "license": "MIT",
+  "keywords": ["legal", "regulatory", "compliance", "africa", "kenya", "nigeria", "south-africa", "intelligence"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://www.wansom.ai/briefly",
+  "supportUrl": "https://www.wansom.ai/contact",
+  "privacyPolicyUrl": "https://www.wansom.ai/privacy-policy",
+  "termsOfServiceUrl": "https://www.wansom.ai/terms-of-service"
+}
