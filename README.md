@@ -90,8 +90,6 @@ plugins/briefly/
   skills/sector-scan/               /briefly:sector-scan
 ```
 
-The server itself lives in Wansom's `staging/` app (`src/app/api/mcp/route.ts`, `src/lib/mcp/`).
-
 Validate before publishing: `claude plugin validate . && claude plugin validate plugins/briefly`.
 
 Support: law@wansom.ai
