@@ -39,4 +39,4 @@ The key developments in a few sentences each, each linked to Briefly.
 - [Title](URL)
 ```
 
-Use only facts from the Briefly results and copy the links exactly. Say "no developments found on Briefly" for a market with nothing.
+Use only facts from the Briefly results, summarise them in your own words rather than pasting the analyses, and copy the links exactly so readers can open the full analysis on Briefly. Say "no developments found on Briefly" for a market with nothing.

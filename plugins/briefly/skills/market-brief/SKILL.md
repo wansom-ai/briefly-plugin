@@ -41,4 +41,4 @@ What it requires or decided, who is affected, deadlines. ([Briefly](URL))
 - [Title](URL)
 ```
 
-Leave out any section with nothing in it. Use only facts from the Briefly results, copy the links exactly, and mark premium items as "full analysis on Briefly".
+Summarise each development in your own words — never paste the analysis — and end it with "Full analysis on Briefly ([link](URL))". Leave out any section with nothing in it. Use only facts from the Briefly results, copy the links exactly, and mark premium items as "full analysis on Briefly".

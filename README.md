@@ -58,7 +58,7 @@ Every tool returns Markdown for the model plus the same result as structured dat
 
 ## What it returns — and doesn't
 
-- Only content already public on Briefly. Premium analyses come back as a preview with a link to the full piece.
+- Only content already public on Briefly. The assistant reads the full analysis to answer accurately, but is instructed never to display it in full: it summarises and invites the reader to open the full analysis on Briefly. Premium analyses come back as a preview with a link to the full piece.
 - No case-law or statute databases: Kenya Law, AfricanLII and the other LIIs ask not to be used as AI input, so items from them are never returned.
 - No sign-in, read-only; requests are rate-limited.
 

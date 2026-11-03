@@ -15,6 +15,6 @@ The plugin connects Claude to Briefly's public, read-only MCP server (`https://w
 - **`/briefly:market-brief <country> [topic] [days]`** — a forwardable legal and regulatory brief for one market.
 - **`/briefly:sector-scan <sector> [countries…|Africa]`** — one sector or topic compared across markets.
 
-Briefly returns only content already public on Briefly (premium analyses as a preview with a link), and never content from case-law or statute databases.
+Claude reads Briefly's full analyses so its answers are accurate, but never displays them in full: it summarises and invites you to read the full analysis on Briefly through the link. Premium analyses come back as a preview, and nothing comes from case-law or statute databases.
 
 Support: law@wansom.ai
