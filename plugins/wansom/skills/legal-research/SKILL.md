@@ -11,7 +11,7 @@ Wansom AI runs the research on its own systems, as the signed-in user, and retur
 ## Jurisdiction first
 
 - If the question already names the jurisdiction(s) ("the Kenyan position on…", "compare Kenya and Uganda…"), use them — never ask the user again.
-- If not, call `choose_jurisdictions` with `purpose: "research"` and the user's question. It shows a picker in the chat with Wansom's jurisdictions, with the country the user is in pre-selected; the user can tick several for a comparative analysis. END YOUR TURN with one short sentence pointing the user to it (don't list the jurisdictions yourself) and let the user pick there — do not call `legal_research` in the same turn, and never pick for them (the suggested country is only a suggestion).
+- If not, call `choose_jurisdictions` with `purpose: "research"` and the user's question **exactly as they asked it**. It shows a selector in the chat with Wansom's jurisdictions, the user's country pre-selected; the user can tick several for a comparative analysis. When they press **Start research**, the selector runs Wansom's research itself and shows the answer in the card (and passes it to you for follow-ups). So END YOUR TURN with one short sentence pointing the user to the selector — don't list the jurisdictions, don't pick for them, and don't call `legal_research` for that question yourself. Only if the user types their jurisdiction(s) in the chat instead, call `legal_research` with them.
 
 ## Tools
 
